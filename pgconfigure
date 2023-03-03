@@ -3,6 +3,7 @@ rm -rf postgres
 mkdir postgres
 tar xzvf REL_14_2.tar.gz --strip-components 1 -C postgres
 
+
 if [ "$OS" = "Windows_NT" ]; then
   (cd postgres/src/tools/msvc/ && perl mkvcbuild.pl)
 else
